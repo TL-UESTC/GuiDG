@@ -1,10 +1,11 @@
-# Example code for GuiDG 
+# Pytorch implementation for GuiDG 
+PyTorch implementation of [Generalizing Vision-Language Models with Dedicated Prompt Guidance (AAAI'26)](https://arxiv.org/abs/2512.02421).
 The following guidance runs GuiDG on ImageNet-DG. The code supports other datasets reported in paper with similar usage.
 
 ## Environment
 - Clone [CoOp](https://github.com/KaiyangZhou/CoOp) and prepare environments as instructed (including Dassl, CLIP, etc.).
 - Clone [DomainBed](https://github.com/facebookresearch/DomainBed) and prepare environments as instructed.
-- **Important**: Comment Line 5 in `Dassl.pytorch-master/dassl/data/datasets/__init__.py`: 
+- **Important**: Comment Line 5 in `Dassl.pytorch-master/dassl/data/datasets/__init__.py` (otherwise there might not be outputs in the logs): 
 ```
 # from .dg import *
 ```
